@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+.container{
+    width: 25vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+}
+.container h1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 30px 0px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.formulario input{
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(81, 2, 207);
+}
+.formulario input:last-child{
+    background: linear-gradient();
+}
