@@ -16,13 +16,18 @@
   <body>
     <div class="container">
       <h1>Welcome</h1>
-      <form action="" class="formulario">
-        <label>name</label>
-        <input type="text" name="name" id="name" />
-        <label>Email</label>
-        <input type="email" name="email" id="email" />
+      <form class="formulario">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" id="name" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" id="email" />
+        </label>
 
-        <input type="submit" value="Send" />
+        <button type="submit">Send</button>
+        <p id="result"></p>
       </form>
     </div>
     <script src="script.js"></script>

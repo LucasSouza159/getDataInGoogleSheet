@@ -10,12 +10,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-color: rgb(230, 230, 230);
 }
 
 .container{
-    width: 25vw;
-    height: 55vh;
+    width: 30%;
+    height: 23rem;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(185, 185, 185);
@@ -32,20 +33,60 @@ body{
 }
 .formulario label{
     color: #ccc;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(81, 2, 207);
+    margin-bottom: 10px;
 }
 .formulario input{
-    margin-bottom: 10px;
     padding: 5px;
     outline: none;
     border: none;
-    border-bottom: 1px solid rgb(81, 2, 207);
+    font-weight: bold;
 }
-.formulario input:last-child{
+.formulario button{
     background: linear-gradient(rgb(81, 2, 207), rgb(236, 0, 204));
     color: white;
     font-weight: bold;
-    padding: 8px;
     border: none;
+    padding: 8px;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadding{
+    width: 30px;
+    animation: spin 1s infinite linear;
+}
+#result{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Querys */
+@media (max-width:650px){
+    .container{
+        width: 40%;
+        height: 55vh;
+    }
+}
+@media (max-width:450px){
+    .container{
+        width: 70%;
+        height: 55vh;
+    }
 }
